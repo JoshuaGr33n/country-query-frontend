@@ -1,24 +1,54 @@
-# huboo-test-frontend
+## Country Query Frontend (Vue.js)
 
-## Project setup
+This Vue.js frontend provides a user interface for querying country information based on ISO codes. Users can enter a code, and the frontend retrieves details like name, region, and capital city from a backend API.
+
+### Prerequisites
+
+* Node.js >= 14.x
+* npm (or yarn)
+* Vue CLI
+
+### Setup Instructions
+
+1. **Clone the Repository:**
+
+```bash
+git clone https://github.com/JoshuaGr33n/country-query-frontend.git
+cd country-query-frontend
 ```
+
+2. **Install Dependencies:**
+
+```bash
 npm install
+# or, if using yarn
+yarn install
 ```
 
-### Compiles and hot-reloads for development
-```
+3. **Configure Environment:**
+
+* Duplicate `.env.example` to `.env`.
+* Set the `VUE_APP_API_URL` in `.env` to your backend's API endpoint (e.g., `http://localhost:8000`).
+
+4. **Run the Development Server:**
+
+```bash
 npm run serve
+# or, if using yarn
+yarn serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+### Testing
+
+Run unit tests:
+
+```bash
+npm run test
+# or, if using yarn
+yarn run test
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Additional Information
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* Ensure your backend service is running at the configured URL in `.env`.
+
